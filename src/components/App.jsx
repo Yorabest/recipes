@@ -34,7 +34,7 @@ export class App extends Component{
     return (
       <>
         <ThemeProvider theme={theme}>
-          {/* <RecipesList recipes={recipes}/> */}
+      
           <button onClick={this.toggleTimer}>{this.state.isTimer ? 'Stop' : "Start"}</button>
           {this.state.isTimer && <Timer />}
           <Sum/>
